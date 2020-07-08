@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cat's hotel</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__wrapper">
+                <div class="logo">
+                    <a class="logo__link">
+                        <img src="img/logo.png" alt="logo">
+                    </a>
+                </div>
+                <nav class="nav">
+                    <ul class="navbar">
+                        <li class="navbar__item"><a class="navbar__link" href="#">Почему мы?</a> </li>
+                        <li class="navbar__item"><a class="navbar__link" href="#">Номера</a> </li>
+                        <li class="navbar__item"><a class="navbar__link" href="#">Отзывы</a> </li>
+                        <li class="navbar__item"><a class="navbar__link" href="#">Как нас найти</a> </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="catalog">
+        <div class="container">
+
+            <header class="catalog__header">
+                <h3 class="section__title catalog__title">Наши номера</h3>
+                <select name="select__name" id="select__name1" class="sort catalog__sort">
+                    <option value="1" class="sort__option">&#8593; По площади</option>
+                    <option value="2" class="sort__option">&#8595; По площади</option>
+                    <option value="3" class="sort__option">&#8593; По цене</option>
+                    <option value="4" class="sort__option">&#8595; По цене</option>
+                </select>
+            </header>
+            <div class="section__wrapper catalog__wrapper">
+                <div class="catalog__main">
+                    <aside class="filter catalog__filter">
+                        <div class="filter__item">
+                            <span class="filter__title">Цена за сутки, ₽</span>
+                            <div class="filter__parameters">
+                                <div class="filter__row">
+                                    <input type="text" class="filter__parameter" placeholder="от 100">
+                                    <input type="text" class="filter__parameter" placeholder="от 600">
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="filter__item">
+                            <span class="filter__title">Площадь</span>
+                            <div class="filter__parameters">
+                                <div class="filter__row">
+                                    <input type="checkbox" class="filter__parameter">
+                                    <label class="filter__label">0,63 m2</label>
+                                </div>
+                                <div class="filter__row">
+                                    <input type="checkbox" class="filter__parameter">
+                                    <label class="filter__label">0,90 m2</label>
+                                </div>
+                                <div class="filter__row">
+                                    <input type="checkbox" class="filter__parameter">
+                                    <label class="filter__label">1,13 m2</label>
+                                </div>
+                                <div class="filter__row">
+                                    <input type="checkbox" class="filter__parameter">
+                                    <label class="filter__label">1.56 m2</label>
+                                </div>
+                                <div class="filter__row">
+                                    <input type="checkbox" class="filter__parameter">
+                                    <label class="filter__label">2.56 m2</label>
+                                </div>
+                                <div class="filter__row">
+                                    <input type="checkbox" class="filter__parameter">
+                                    <label class="filter__label">2,88 m2</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="filter__item">
+                            <span class="filter__title">Оснащение номера</span>
+                            <div class="filter__parameters">
+                                <div class="filter__row">
+                                    <input type="checkbox" class="filter__parameter">
+                                    <label class="filter__label">Пустой номер</label>
+                                </div>
+                                <div class="filter__row">
+                                    <input type="checkbox" class="filter__parameter">
+                                    <label class="filter__label">Лежак</label>
+                                </div>
+                                <div class="filter__row">
+                                    <input type="checkbox" class="filter__parameter">
+                                    <label class="filter__label">Когтеточка</label>
+                                </div>
+                                <div class="filter__row">
+                                    <input type="checkbox" class="filter__parameter">
+                                    <label class="filter__label">Игровой комплекс</label>
+                                </div>
+                                <div class="filter__row">
+                                    <input type="checkbox" class="filter__parameter">
+                                    <label class="filter__label">Домик</label>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="filter__reset">Сбросить фильтр</a>
+
+                    </aside>
+                </div>
+                <div class="catalog__content">
+                    <div class="cards">
+                        <div class="cards__wrapper">
+
+                            <div class="cards__item">
+                                <img src="img/cat1.png" alt="cat" class="cards__image">
+                                <div class="cards__text">
+                                    <h3 class="cards__title">Эконом</h3>
+                                    <div class="cards__description">
+                                        <div class="cards__description__row">
+                                            <span class="cards__description__label">Размеры (ШхГхВ)-</span>
+                                            <span class="cards-description__parameter">90х70х180 см</span>
+                                        </div>
+                                        <div class="cards__description__row">
+                                            <span class="cards__description__label">Площадь</span>
+                                            <span class="cards-description__parameter">0,63 м2</span>
+                                        </div>
+                                        <div class="cards__description__row">
+                                            <span class="cards__description__label">Оснащение номера</span>
+                                            <span class="cards__description__parameter"></span>
+                                        </div>
+                                        <div class="cards__description__row">
+                                            <span class="cards__description__label">Цена за сутки: </span>
+                                            <span
+                                                class="cards__description__parameter cards__description__price">100₽</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a class="button btn room-text-btn cards__button" href="#">
+                                    Забронировать<img src="img/paw.png" class="item__button__img"></a>
+
+                            </div>
+
+                            <div class="cards__item">
+                                <img src="img/cat2.png" alt="cat" class="cards__image">
+                                <div class="cards__text">
+                                    <h3 class="cards__title">Эконом плюс</h3>
+                                    <div class="cards__description">
+                                        <div class="cards__description__row">
+                                            <span class="cards__description__label">Размеры (ШхГхВ)-</span>
+                                            <span class="cards-description__parameter">90х100х180 см</span>
+                                        </div>
+                                        <div class="cards__description__row">
+                                            <span class="cards__description__label">Площадь</span>
+                                            <span class="cards-description__parameter">0,9 м2</span>
+                                        </div>
+                                        <div class="cards__description__row">
+                                            <span class="cards__description__label">Оснащение номера</span>
+                                            <span class="cards-description__parameter"></span>
+                                        </div>
+                                        <div class="cards__description__row">
+                                            <span class="cards__description__label">Цена за сутки: </span>
+                                            <span
+                                                class="cards-description__parameter cards__description__price">200₽</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a class="button btn room-text-btn cards__button" href="#">
+                                    Забронировать<img src="img/paw.png" class="item__button__img"></a>
+                            </div>
+
+                            <div class="cards__item">
+                                <img src="img/cat3.png" alt="cat" class="cards__image">
+                                <div class="cards__text">
+                                    <h3 class="cards__title">Комфорт</h3>
+                                    <div class="cards__description">
+                                        <div class="cards__description__row">
+                                            <span class="cards__description__label">Размеры (ШхГхВ)-</span>
+                                            <span class="cards-description__parameter">100х125х180 см</span>
+                                        </div>
+                                        <div class="cards__description__row">
+                                            <span class="cards__description__label">Площадь</span>
+                                            <span class="cards-description__parameter">1,13 м2</span>
+                                        </div>
+                                        <div class="cards__description__row">
+                                            <span class="cards__description__label">Оснащение номера</span>
+                                            <span class="cards-description__parameter"></span>
+                                        </div>
+                                        <div class="cards__description__row">
+                                            <span class="cards__description__label">Цена за сутки: </span>
+                                            <span
+                                                class="cards-description__parameter cards__description__price">250₽</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a class="button btn room-text-btn cards__button" href="#">
+                                    Забронировать<img src="img/paw.png" class="item__button__img"></a>
+                            </div>
+
+                            <div class="cards__item">
+                                <img src="img/cat4.png" alt="cat" class="cards__image">
+                                <div class="cards__text">
+                                    <h3 class="cards__title">Сьют</h3>
+                                    <div class="cards__description">
+                                        <div class="cards__description__row">
+                                            <span class="cards__description__label">Размеры (ШхГхВ)-</span>
+                                            <span class="cards-description__parameter">125х125х180 см</span>
+                                        </div>
+                                        <div class="cards__description__row">
+                                            <span class="cards__description__label">Площадь</span>
+                                            <span class="cards-description__parameter">1,56 м2</span>
+                                        </div>
+                                        <div class="cards__description__row">
+                                            <span class="cards__description__label">Оснащение номера</span>
+                                            <span class="cards-description__parameter"></span>
+                                        </div>
+                                        <div class="cards__description__row">
+                                            <span class="cards__description__label">Цена за сутки: </span>
+                                            <span
+                                                class="cards-description__parameter cards__description__price">350₽</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a class="button btn room-text-btn cards__button" href="#">
+                                    Забронировать<img src="img/paw.png" class="item__button__img"></a>
+                            </div>
+
+                            <div class="cards__item">
+                                <img src="img/cat5.png" alt="cat" class="cards__image">
+                                <div class="cards__text">
+                                    <h3 class="cards__title">Люкс</h3>
+                                    <div class="cards__description">
+                                        <div class="cards__description__row">
+                                            <span class="cards__description__label">Размеры (ШхГхВ)-</span>
+                                            <span class="cards-description__parameter">160х160х180 см</span>
+                                        </div>
+                                        <div class="cards__description__row">
+                                            <span class="cards__description__label">Площадь</span>
+                                            <span class="cards-description__parameter">2,56 м2</span>
+                                        </div>
+                                        <div class="cards__description__row">
+                                            <span class="cards__description__label">Оснащение номера</span>
+                                            <span class="cards-description__parameter"></span>
+                                        </div>
+                                        <div class="cards__description__row">
+                                            <span class="cards__description__label">Цена за сутки: </span>
+                                            <span
+                                                class="cards-description__parameter cards__description__price">350₽</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <a class="button btn room-text-btn cards__button" href="#">
+                                    Забронировать<img src="img/paw.png" class="item__button__img"></a>
+                            </div>
+
+
+                            <div class="cards__item">
+                                <img src="img/cat6.png" alt="cat" class="cards__image">
+                                <div class="cards__text">
+                                    <h3 class="cards__title">Супер-Люкс</h3>
+                                    <div class="cards__description">
+                                        <div class="cards__description__row">
+                                            <span class="cards__description__label">Размеры
+                                                (ШхГхВ)-</span>
+                                            <span class="cards-description__parameter">180х160х180
+                                                см</span>
+                                        </div>
+                                        <div class="cards__description__row">
+                                            <span class="cards__description__label">Площадь</span>
+                                            <span class="cards-description__parameter">2,88
+                                                м2</span>
+                                        </div>
+                                        <div class="cards__description__row">
+                                            <span class="cards__description__label">Оснащение
+                                                номера</span>
+                                            <span class="cards-description__parameter"></span>
+                                        </div>
+                                        <div class="cards__description__row">
+                                            <span class="cards__description__label">Цена за
+                                                сутки: </span>
+                                            <span
+                                                class="cards-description__parameter cards__description__price">600₽</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a class="button btn room-text-btn cards__button" href="#">
+                                    Забронировать<img src="img/paw.png" class="item__button__img"></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section class="section banner">
+        <div class="container">
+            <img src="img/paw1.png" class="banner__paw">
+            <div class="section__wrapper banner__wrapper">
+
+                <h1 class="banner__title">Каждый 7-й день<br> <strong>бесплатно! </strong></h1>
+                <div class="banner__subtitle">Акция действует при размещении в номерах “Люкс” и “Супер-Люкс”</div>
+                <a class="btn button banner__btn" href="#">Забронировать<img src="img/paw2.png"
+                        class="banner__button__img">
+                </a>
+            </div>
+        </div>
+    </section>
+    <footer class="header  footer">
+        <div class="container">
+            <div class="header__wrapper  footer__wrapper">
+                <div class="logo">
+                    <div class="logo__wrapper">
+                        <a class="logo__link" href="#">
+                            <div class="logo__image">
+                                <img src="img/logo.png" alt="logo">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <nav class="nav">
+                    <ul class="navbar">
+                        <li class="navbar__item"><a class="link navbar__link" href="#">Почему мы?</a></li>
+                        <li class="navbar__item"><a class="link navbar__link" href="#">Номера</a></li>
+                        <li class="navbar__item"><a class="link navbar__link" href="#">Отзывы</a></li>
+                        <li class="navbar_item"><a class="link navbar__link" href="#">Как нас найти</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footer__text">
+                <div class="footer__copyright">&copy; 2019 Все права защищены</div>
+                <div class="footer__policy">Политика конфиденциальности</div>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
